@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My IT Project">
+    <meta name="author" content="Uyienminoseye Okodugha">
+    <title>Library</title>
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="/cssIT/style.css">
+    <link rel="stylesheet" href="/cssIT/components.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <header class="">
+        <section class="d-flex justify-content-between align-items-center p-2 position-relative">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#"><img class="w-50 h-auto" id="my-logo" src="/assests/images/scholar-removebg-preview.png"
+                        alt=""></a>
+            </div>
+            <!-- search -->
+            <div class="d-none d-lg-block">
+                <form class="form d-flex" action="">
+                    <input class="form-control" type="search" name="" id="search" placeholder="Search...">
+                    <input type="submit" class="btn btn-secondary ms-1" value="Search">
+                </form>
+            </div>
+            <!-- Apply -->
+            <div>
+                <a href="#" class="btn btn-outline-secondary">Guest</a>
+            </div>
+        </section>
+        <section class="position-relative sticky-top">
+            <!-- Main Nav -->
+            <button type="button" class="offcanvas-toggle position-absolute start-0 bottom-0 fs-3 d-lg-none"
+                data-bs-toggle="offcanvas" data-bs-target="#off"><i class="bi bi-list"></i></button>
+            <div class="d-flex justify-content-center nav">
+                <a class="active nav-link link" href="#">Academia</a>
+                <a class="nav-link link" href="/pages/blog/index.html">Blog</a>
+                <a class="nav-link link" href="#">Portal</a>
+            </div>
+        </section>
+    </header>
+    <!-- Search Form -->
+    <section>
+        <div class="d-block d-lg-none container px-3 py-1 border-bottom border-1 border-muted">
+            <div class="row">
+                <form class="form d-flex col-12" action="">
+                    <input class="form-control" type="search" name="" id="search1" placeholder="Search...">
+                    <input type="submit" class="btn btn-secondary ms-1" value="Search">
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start shadow d-lg-none p-0" id="off">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Academia</h1>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="d-flex flex-column list-unstyled fw-bolder">
+    <li><a class="dlink nav-link" href="/index.html">Home</a></li>
+    <li><a class="dlink nav-link" href="/pages/academia/about.html">About</a></li>
+    <li><a class="dlink nav-link" href="/pages/academia/faculties.html">Faculties</a></li>
+    <li><a class="dlink nav-link" href="/pages/academia/admissions.html">Admissions</a></li>
+    <li><a class="active dlink nav-link" href="/pages/academia/library.html">Library</a></li>
+    <li><a class="dlink nav-link" href="/pages/academia/research.html">Research</a></li>
+    <li><a class="dlink nav-link" href="/pages/academia/contact.html">Contact Us</a></li>
+</ul>
+
+        </div>
+    </div>
+    <div class="container-fluid py-3">
+        <div class="row g-3">
+            <!-- Aside -->
+            <aside class="d-none d-lg-block col-lg-2 overflow-auto vh-100 sticky-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class=" aslink nav-link " href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="aslink nav-link" href="/pages/academia/about.html">About</a></li>
+                    <li class="nav-item"><a class="aslink nav-link" href="/pages/academia/faculties.html">Faculties</a></li>
+                    <li class="nav-item"><a class="aslink nav-link" href="/pages/academia/admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="active aslink nav-link" href="/pages/academia/library.html">Library</a></li>
+                    <li class="nav-item"><a class="aslink nav-link" href="/pages/academia/research.html">Research</a></li>
+                    <li class="nav-item"><a class="aslink nav-link" href="/pages/academia/contact.html">Contact Us</a></li>
+                </ul>
+            </aside>
+
+
+
+            <!-- Main Content -->
+            <!-- <main class="col-12 col-md-9 col-lg-7">
+                <div class="container">
+                    <div class="text-center my-3">
+                        <h2>Welcome to the University Library</h2>
+                        <p class="lead">Discover a world of knowledge and resources at our state-of-the-art library.</p>
+                    </div>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </main> -->
+            <!-- Main Content -->
+<main class="col-12 col-md-9 col-lg-7">
+
+    <!-- Page Header -->
+    <div class="text-center mb-4">
+        <span class="badge bg-primary bg-opacity-10 text-primary px-4 py-2 mb-3">Library</span>
+        <h2 class="display-6 fw-bold">University Library</h2>
+        <p class="text-muted lead">Your gateway to knowledge, research, and academic success.</p>
+        <div class="border-bottom border-primary w-25 mx-auto mt-2"></div>
+    </div>
+
+    <!-- Welcome Message -->
+    <div class="bg-white p-4 rounded-3 shadow-sm mb-3">
+        <p class="text-muted mb-0">
+            The Academia University Library is dedicated to supporting the teaching, learning, and research needs 
+            of our community. Whether you're looking for a quiet place to study, access to digital resources, 
+            or assistance with your research, we're here to help you succeed.
+        </p>
+    </div>
+
+    <!-- Library Services -->
+    <div class="bg-white p-4 rounded-3 shadow-sm mb-3">
+        <h5 class="fw-bold text-primary mb-3">
+            <i class="bi bi-book me-2"></i>Library Services
+        </h5>
+        <div class="row g-3">
+            <div class="col-12 col-sm-6">
+                <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light">
+                    <div class="icon-circle bg-primary bg-opacity-10 text-primary flex-shrink-0">
+                        <i class="bi bi-building fs-5"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Physical Library</h6>
+                        <p class="text-muted small mb-0">Access our extensive collection of print books, journals, and reference materials.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light">
+                    <div class="icon-circle bg-success bg-opacity-10 text-success flex-shrink-0">
+                        <i class="bi bi-laptop fs-5"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">E-Library</h6>
+                        <p class="text-muted small mb-0">Access thousands of e-books, journals, and databases from anywhere, anytime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light">
+                    <div class="icon-circle bg-warning bg-opacity-10 text-warning flex-shrink-0">
+                        <i class="bi bi-search fs-5"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Research Support</h6>
+                        <p class="text-muted small mb-0">Get help with literature searches, citation management, and research methodology.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-light">
+                    <div class="icon-circle bg-info bg-opacity-10 text-info flex-shrink-0">
+                        <i class="bi bi-arrow-left-right fs-5"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Borrowing & Returns</h6>
+                        <p class="text-muted small mb-0">Easy borrowing, renewals, and returns with our efficient circulation system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Digital Resources -->
+    <div class="bg-white p-4 rounded-3 shadow-sm mb-3">
+        <h5 class="fw-bold text-primary mb-3">
+            <i class="bi bi-cloud-arrow-down me-2"></i>Digital Resources
+        </h5>
+        <div class="row g-3">
+            <div class="col-12 col-sm-6">
+                <div class="card cards h-100 border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="bi bi-book text-primary fs-4"></i>
+                            <h6 class="fw-bold mb-0">E-books</h6>
+                        </div>
+                        <p class="text-muted small mb-0">Access over 50,000 e-books across all disciplines, available 24/7.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="card cards h-100 border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="bi bi-file-text text-success fs-4"></i>
+                            <h6 class="fw-bold mb-0">Academic Journals</h6>
+                        </div>
+                        <p class="text-muted small mb-0">Access thousands of peer-reviewed journals from leading publishers worldwide.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="card cards h-100 border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="bi bi-database text-warning fs-4"></i>
+                            <h6 class="fw-bold mb-0">Research Databases</h6>
+                        </div>
+                        <p class="text-muted small mb-0">Explore specialized databases for in-depth research in your field of study.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="card cards h-100 border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="bi bi-mortarboard text-info fs-4"></i>
+                            <h6 class="fw-bold mb-0">Online Learning</h6>
+                        </div>
+                        <p class="text-muted small mb-0">Access tutorials, video lectures, and self-paced learning modules.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Library Facilities -->
+    <div class="bg-white p-4 rounded-3 shadow-sm mb-3">
+        <h5 class="fw-bold text-primary mb-3">
+            <i class="bi bi-building me-2"></i>Library Facilities
+        </h5>
+        <div class="row g-3">
+            <div class="col-12 col-sm-6">
+                <div class="facility-item d-flex align-items-center gap-3 p-3 rounded-3 border">
+                    <i class="bi bi-person-walking text-primary fs-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-0">Reading Areas</h6>
+                        <p class="text-muted small mb-0">Quiet study zones and comfortable reading spaces for focused work.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="facility-item d-flex align-items-center gap-3 p-3 rounded-3 border">
+                    <i class="bi bi-wifi text-success fs-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-0">Computer/Internet Access</h6>
+                        <p class="text-muted small mb-0">High-speed internet and computer workstations for student use.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="facility-item d-flex align-items-center gap-3 p-3 rounded-3 border">
+                    <i class="bi bi-people text-warning fs-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-0">Group Study Spaces</h6>
+                        <p class="text-muted small mb-0">Bookable rooms for collaborative learning and group projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="facility-item d-flex align-items-center gap-3 p-3 rounded-3 border">
+                    <i class="bi bi-clipboard-data text-info fs-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-0">Research Areas</h6>
+                        <p class="text-muted small mb-0">Dedicated spaces for graduate students and faculty research.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Opening Hours -->
+    <div class="bg-white p-4 rounded-3 shadow-sm mb-3">
+        <h5 class="fw-bold text-primary mb-3">
+            <i class="bi bi-clock me-2"></i>Opening Hours
+        </h5>
+        <div class="row g-3">
+            <div class="col-12 col-md-6">
+                <div class="p-3 rounded-3 bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Monday - Friday</span>
+                        <span class="text-primary">8:00 AM - 9:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="p-3 rounded-3 bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Saturday</span>
+                        <span class="text-primary">Closed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="p-3 rounded-3 bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Sunday</span>
+                        <span class="text-primary">Closed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="p-3 rounded-3 bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Public Holidays</span>
+                        <span class="text-primary">Closed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-muted small mt-2 mb-0">
+            <i class="bi bi-info-circle me-1"></i>
+            Hours may vary during exam periods and holidays. Check our website for updates.
+        </p>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="row g-3">
+        <div class="col-6 col-lg-3">
+            <div class="bg-white p-3 rounded-3 shadow-sm text-center">
+                <h3 class="display-6 fw-bold text-primary">50K+</h3>
+                <p class="text-muted small mb-0">E-books</p>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3">
+            <div class="bg-white p-3 rounded-3 shadow-sm text-center">
+                <h3 class="display-6 fw-bold text-success">10K+</h3>
+                <p class="text-muted small mb-0">Journals</p>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3">
+            <div class="bg-white p-3 rounded-3 shadow-sm text-center">
+                <h3 class="display-6 fw-bold text-warning">500+</h3>
+                <p class="text-muted small mb-0">Databases</p>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3">
+            <div class="bg-white p-3 rounded-3 shadow-sm text-center">
+                <h3 class="display-6 fw-bold text-info">24/7</h3>
+                <p class="text-muted small mb-0">E-Library Access</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Library Contact -->
+    <div class="mt-3 bg-white p-4 rounded-3 shadow-sm">
+        <h5 class="fw-bold text-primary mb-3">
+            <i class="bi bi-headset me-2"></i>Need Help?
+        </h5>
+        <p class="text-muted mb-2">Our friendly library staff are always ready to assist you.</p>
+        <div class="row g-2">
+            <div class="col-12 col-sm-6">
+                <p class="text-muted mb-0">
+                    <i class="bi bi-envelope me-2 text-primary"></i>
+                    <strong>Email:</strong> library@uoun.edu.ng
+                </p>
+            </div>
+            <div class="col-12 col-sm-6">
+                <p class="text-muted mb-0">
+                    <i class="bi bi-telephone me-2 text-primary"></i>
+                    <strong>Phone:</strong> +234 816 355 4230
+                </p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+            <div class="d-none d-md-block col-md-3">
+                    <div class="shadow bg-white rounded p-3 sticky-md-top">
+            <h5 class="text-primary text-center border-bottom pb-2 mb-3">
+                <i class="bi bi-newspaper me-2"></i>News & Updates
+            </h5>
+            
+            <div class="news-list">
+                <div class="news-item card cards mb-3 border-0 shadow-sm">
+                    <div class="card-body p-3">
+                        <span class="badge bg-danger mb-2">New</span>
+                        <p class="mb-2 fw-semibold">2026/2027 admission application now open.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm w-100">Apply Now →</a>
+                    </div>
+                </div>
+                
+                <div class="news-item card cards mb-3 border-0 shadow-sm">
+                    <div class="card-body p-3">
+                        <span class="badge bg-warning text-dark mb-2">Deadline</span>
+                        <p class="mb-2 fw-semibold">Course Registration Deadline Approaching.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm w-100">Register Courses →</a>
+                    </div>
+                </div>
+                
+                <div class="news-item card cards mb-3 border-0 shadow-sm">
+                    <div class="card-body p-3">
+                        <span class="badge bg-info mb-2">Updated</span>
+                        <p class="mb-2 fw-semibold">Library Operating hours updated.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm w-100">See More →</a>
+                    </div>
+                    <a href="#" class="btn btn-primary w-100 mt-2">
+                <i class="bi bi-arrow-right-circle me-1"></i>All News
+            </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="container-fluid m-0 mt-3 bg-secondary">
+        <div class="container py-2">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!-- footer logo -->
+                    <div class="d-flex align-items-center gap-2 mb-1 w-100">
+                        <img class="footer-logo" src="/assests/images/logome-removebg-preview.png"
+                            alt="UO Group">
+                        <img class="footer-logo" src="/assests/images/scholar-removebg-preview.png"
+                            alt="U.O.U.N">
+                    </div>
+                    <p class="text-light opacity-75">Empowering minds through education, innovation and
+                        research.</p>
+                </div>
+                <!-- Explore -->
+                <div class="col-6 col-lg-3">
+                    <h6 class="fw-bold">Explore</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="footer-link" href="#">About Us</a></li>
+                        <li><a class="footer-link" href="#">Academics</a></li>
+                        <li><a class="footer-link" href="#">Admission</a></li>
+                        <li><a class="footer-link" href="#">Research</a></li>
+                        <li><a class="footer-link" href="#">Library</a></li>
+                    </ul>
+                </div>
+                <!-- Students -->
+                <div class="col-6 col-lg-3">
+                    <h6 class="fw-bold">Students</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="footer-link" href="#">Student Portal</a></li>
+                        <li><a class="footer-link" href="#">Apply Now</a></li>
+                        <li><a class="footer-link" href="#">Scholarship</a></li>
+                        <li><a class="footer-link" href="#">Student Services</a></li>
+                        <li><a class="footer-link" href="#">Support</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                <div class="col-6 col-lg-3">
+                    <h6 class="fw-bold">Contact Us</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="footer-link" href="#">Address</a></li>
+                        <li><a class="footer-link" href="#">Phone</a></li>
+                        <li><a class="footer-link" href="#">Email</a></li>
+                        <li><a class="footer-link" href="#">Socials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top border-secondary">
+            <div
+                class="container py-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <small>
+                    &copy; 2026 UO Group. All Right Reserved.
+                </small>
+                <div>
+                    <a class="footer-link me-3" href="">Privacy Policy</a>
+                    <a class="footer-link me-3" href="">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
