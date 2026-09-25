@@ -20,16 +20,16 @@
     <link rel="stylesheet" href="/cssIT/style.css">
     <link rel="stylesheet" href="/cssIT/components.css">
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/spark-admin-1.0.0/spark-admin-1.0.0/assets/images/scholar-favicon.png">
+    <link rel="icon" type="image/x-icon" href="/portal/pages/assets/images/scholar-favicon.png">
 </head>
 <body>
 
     <!-- ==================== NAVBAR ==================== -->
     <div class="container-fluid nav-body sticky-top nav-fluid shadow-lg p-0 py-lg-2">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary w-lg-75 w-100 mx-auto rounded-lg-pill">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 w-lg-90 w-xxlg-75 mx-auto rounded-lg-pill">
             <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand bg-black p-2 rounded-lg-pill" href="/index.html">
-                    <img src="/spark-admin-1.0.0/spark-admin-1.0.0/assets/images/LASTLOGO-removebg-preview.png" alt="U.O.U.N">
+                <a class="navbar-brand bg-black p-2 rounded-pill" href="/index.html">
+                    <img src="/assests/images/LOGO.png" alt="U.O.U.N">
                 </a>
                 <button class="navbar-toggler ms-auto p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,22 +37,30 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/index.html">Home</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/pages/academia/about.html">About</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/pages/academia/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/pages/academia/faculties.html">Faculties</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/pages/academia/faculties.html">Faculties</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active px-3" aria-current="page" href="/pages/academia/admissions.html">Admissions</a>
+                            <a class="nav-link active px-5 px-lg-2 px-xl-3" aria-current="page" href="/pages/academia/admissions.html">Admissions</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-5 px-lg-2 px-xl-3 dropdown-toggle" data-bs-toggle="dropdown" href="#drop">News</a>
+                            <ul class="dropdown-menu" data-bs-theme="dark" id="drop">
+                                <li class="dropdown-item p-0"><a class="text-white news-dropdown d-block px-3 py-1 text-decoration-none" href="/pages/academia/news.html">News</a></li>
+                                <li class="dropdown-item p-0"><a class="text-decoration-none news-dropdown px-3 py-1 d-block text-white" href="/pages/academia/events.html">Events</a></li>
+                            </ul>
+                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/spark-admin-1.0.0/spark-admin-1.0.0/page-login.html" target="_blank" rel="noopener noreferrer">Portal</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/portal/pages/page-login.html" target="_blank" rel="noopener noreferrer">Portal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/pages/academia/contact.html">Contact</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/pages/academia/contact.html">Contact</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -71,7 +79,7 @@
             <div class="position-absolute top-0 start-0 w-100 h-100 dark-overlay-ad"></div>
             <div class="position-absolute bottom-0 start-0 p-4 text-white">
                 <h2 class="fw-bold display-4">Your Academic Journey Starts Here</h2>
-                <p class="">Take the first step toward a rewarding future at U.O.U.N. Our admission process is simple and transparent.</p>
+                <p class="">Take the first step toward a rewarding future at U.O.U.N.</p>
             </div>
         </div>
         <div class="container">
@@ -165,8 +173,8 @@
                 <!-- RIGHT COLUMN -->
                 <div class="col-12 col-lg-6">
                     <div class="card mt-3 p-3">
-                        <h3>Admission Requirements</h3>
-                        <div class="requirements-list mt-4">
+                        <h2 class="ms-5 mt-3">Admission Requirements</h2>
+                        <div class="requirements-list mt-0">
                             <div class="requirement-item">
                                 <div class="icon-box">
                                     <i class="bi bi-mortarboard-fill"></i>
@@ -213,7 +221,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">Need More Information?</h3>
-                                <p>Have questions about admissions, programmes, or life at U.O.U.N? Our admissions team is ready to assist you. Fill out the form below and we will respond within 48 hours. You can also reach us directly via email at admissions@uoun.edu.ng or call +234 816 355 4230.</p>
+                                <p>Have questions about admissions, programmes, or life at U.O.U.N? Our admissions team is ready to assist you. Fill out the form below and we will respond within 48 hours. You can also reach us directly via email at <a href="mailto:admissions@uoun.edu.ng" class="fw-bold">admissions@uoun.edu.ng</a> or call <em class="fw-bold">+234 816 355 4230</em>.</p>
 
                                 <form class="form mt-4" action="">
                                     <div class="mb-3">
@@ -260,7 +268,7 @@
                 <!-- University Info -->
                 <div class="col-lg-4 col-md-6">
                    <div class="footer-logo bg-black p-2 mb-2 rounded-pill" href="/index.html">
-                        <img src="/spark-admin-1.0.0/spark-admin-1.0.0/assets/images/LASTLOGO-removebg-preview.png" alt="U.O.U.N">
+                        <img src="/assests/images/LASTLOGO-removebg-preview.png" alt="U.O.U.N">
                     </div>
                     <p class="text-dark mb-2">
                         Shaping Minds. Building Futures.
@@ -283,7 +291,7 @@
                         <li class="mb-2"><a href="/pages/academia/about.html" class="text-dark text-decoration-none">About Us</a></li>
                         <li class="mb-2"><a href="/pages/academia/admissions.html" class="text-dark text-decoration-none">Admissions</a></li>
                         <li class="mb-2"><a href="/pages/academia/faculties.html" class="text-dark text-decoration-none">Faculties</a></li>
-                        <li class="mb-2"><a href="/spark-admin-1.0.0/spark-admin-1.0.0/page-login.html" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">Student Portal</a></li>
+                        <li class="mb-2"><a href="/portal/pages/page-login.html" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">Student Portal</a></li>
                         <li class="mb-0"><a href="/pages/academia/contact.html" class="text-dark text-decoration-none">Contact</a></li>
                     </ul>
                 </div>

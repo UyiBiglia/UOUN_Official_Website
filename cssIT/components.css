@@ -430,8 +430,22 @@ header {
     transform: translateY(-10px);
     box-shadow: 0 4px 10px rgb(187, 182, 128);
 }
-i.icon {
+/* i.icon {
     transition: transform 0.3s ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+} */
+i.icon {
+    background-color: var(--accent);
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 .ab-card:hover i.icon {
     background-color: black !important;
@@ -571,6 +585,9 @@ a:hover .bi-arrow-right {
     max-height: 350px;
     height: auto;
 }
+.sidebar-item.card {
+    background-color: #fff;
+}
 .weekdays, .days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -579,6 +596,33 @@ a:hover .bi-arrow-right {
 }
 .day.has-event {
     background-color: #d6a019;
-    padding: 2px;
+    padding: 5px;
     border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.day.other-month {
+    color: #aaa;
+}
+.card-title.calander {
+    text-align: center;
+    margin: 0.5rem 0 0.25rem ;
+}
+.small-line {
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(to right, #d6a019, #555);
+}
+.next-btn, .previous-btn {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.news-dropdown:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.news-dropdown.active {
+    font-weight: bolder;
 }

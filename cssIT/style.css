@@ -71,6 +71,9 @@ h4 {
   .rounded-lg-pill {
     border-radius: 50rem !important;
   }
+  .w-lg-90 {
+    width: 90% !important;
+  }
   .w-lg-75 {
     width: 75% !important;
   }
@@ -92,4 +95,9 @@ h4 {
         width: 100% !important;
     }
 }
+.card {
+    background-color: #fff;
+}
+@media (max-width: 567px) {
 
+}

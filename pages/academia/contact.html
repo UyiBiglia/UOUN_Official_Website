@@ -21,17 +21,17 @@
     <link rel="stylesheet" href="/cssIT/style.css">
     <link rel="stylesheet" href="/cssIT/components.css">
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/spark-admin-1.0.0/spark-admin-1.0.0/assets/images/scholar-favicon.png">
+    <link rel="icon" type="image/x-icon" href="/portal/pages/assets/images/scholar-favicon.png">
 </head>
 
 <body>
 
     <!-- ==================== NAVBAR ==================== -->
     <div class="container-fluid nav-body sticky-top nav-fluid shadow-lg p-0 py-lg-2">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary w-lg-75 w-100 mx-auto rounded-lg-pill">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 w-lg-90 w-xxlg-75 mx-auto rounded-lg-pill">
             <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand bg-black p-2 rounded-lg-pill" href="/index.html">
-                    <img src="/spark-admin-1.0.0/spark-admin-1.0.0/assets/images/LASTLOGO-removebg-preview.png" alt="U.O.U.N">
+                <a class="navbar-brand bg-black p-2 rounded-pill" href="/index.html">
+                    <img src="/assests/images/LOGO.png" alt="U.O.U.N">
                 </a>
                 <button class="navbar-toggler ms-auto p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,22 +39,30 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/index.html">Home</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/pages/academia/about.html">About</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/pages/academia/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/pages/academia/faculties.html">Faculties</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/pages/academia/faculties.html">Faculties</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/pages/academia/admissions.html">Admissions</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/pages/academia/admissions.html">Admissions</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-5 px-lg-2 px-xl-3 dropdown-toggle" data-bs-toggle="dropdown" href="#drop">News</a>
+                            <ul class="dropdown-menu" data-bs-theme="dark" id="drop">
+                                <li class="dropdown-item p-0"><a class="text-white news-dropdown d-block px-3 py-1 text-decoration-none" href="/pages/academia/news.html">News</a></li>
+                                <li class="dropdown-item p-0"><a class="text-decoration-none news-dropdown px-3 py-1 d-block text-white" href="/pages/academia/events.html">Events</a></li>
+                            </ul>
+                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="/spark-admin-1.0.0/spark-admin-1.0.0/page-login.html" target="_blank" rel="noopener noreferrer">Portal</a>
+                            <a class="nav-link px-5 px-lg-2 px-xl-3" href="/portal/pages/page-login.html" target="_blank" rel="noopener noreferrer">Portal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active px-3" aria-current="page" href="/pages/academia/contact.html">Contact</a>
+                            <a class="nav-link active px-5 px-lg-2 px-xl-3" aria-current="page" href="/pages/academia/contact.html">Contact</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -119,7 +127,7 @@
 
                                 <div class="col-12">
                                     <label for="contact-message" class="fw-medium">Your Message</label>
-                                    <textarea class="form-control cont-textarea" rows="4" name="message" id="contact-message" placeholder="Tell us more about your inquiry..." required></textarea>
+                                    <textarea class="form-control cont-textarea" rows="7" name="message" id="contact-message" placeholder="Tell us more about your inquiry..." required></textarea>
                                 </div>
 
                                 <div class="col-12">
@@ -226,7 +234,7 @@
                 <!-- University Info -->
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-logo bg-black p-2 mb-2 rounded-pill" href="/index.html">
-                        <img src="/spark-admin-1.0.0/spark-admin-1.0.0/assets/images/LASTLOGO-removebg-preview.png" alt="U.O.U.N">
+                        <img src="/assests/images/LOGO.png" alt="U.O.U.N">
                     </div>
                     <p class="text-dark mb-2">
                         Shaping Minds. Building Futures.
@@ -249,7 +257,7 @@
                         <li class="mb-2"><a href="/pages/academia/about.html" class="text-dark text-decoration-none">About Us</a></li>
                         <li class="mb-2"><a href="/pages/academia/admissions.html" class="text-dark text-decoration-none">Admissions</a></li>
                         <li class="mb-2"><a href="/pages/academia/faculties.html" class="text-dark text-decoration-none">Faculties</a></li>
-                        <li class="mb-2"><a href="/spark-admin-1.0.0/spark-admin-1.0.0/page-login.html" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">Student Portal</a></li>
+                        <li class="mb-2"><a href="/portal/pages/page-login.html" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">Student Portal</a></li>
                         <li class="mb-0"><a href="/pages/academia/contact.html" class="text-dark text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
