@@ -84,6 +84,23 @@
 
         </div>
     </div>
+
+    <!-- Chatbot Snippet Code(Watson Assistant) -->
+    <script>
+        window.watsonAssistantChatOptions = {
+        integrationID: "b470de76-5496-49ed-be89-3c9525dedb6e", // The ID of this integration.
+        region: "https://integrations.eu-gb.assistant-builder.watson.appdomain.cloud", // The region your integration is hosted in.
+        serviceInstanceID: "69cdb4d9-4c94-430d-bfa3-c219faaa9027", // The ID of your service instance.
+        orchestrateUIAgentExtensions: false, // If you wish to enable optional UI Agent extensions.
+        showRestartButton: true, // Enables the restart/clear chat button in the header
+        onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+        });
+    </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
